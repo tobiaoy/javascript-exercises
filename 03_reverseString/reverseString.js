@@ -8,13 +8,13 @@ const str = string
 split_str = str.split("");
 let reverse_str = [];
 
-// reverse the splits 
+// reverse the split string 
 for (let i = split_str.length; i >= 0; i--){
     reverse_str.push(split_str[i]);
 }
 
 // put the string back together
-let rev_str = reverse_str.join();
+let rev_str = reverse_str.join("");
 
 return rev_str;
 };
