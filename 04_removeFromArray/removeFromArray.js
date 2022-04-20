@@ -9,6 +9,8 @@ const removeFromArray = function(arr, ...moreArgs) {
     // get index of values
     for (let i = 0; i < args.length; i++){
         let index = original.indexOf(args[i]);
+
+        // checks if value is in array and removes it
         if (index > -1){
         original.splice(index, 1);
         }
