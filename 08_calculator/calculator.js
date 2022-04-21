@@ -40,7 +40,7 @@ const factorial = function(num) {
   } else if (num === 1) {
     res = 1;
   } else {
-    res = num * factorial(n-1);
+    res = num * factorial(num-1);
   }
 
   return res;
