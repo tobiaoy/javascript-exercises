@@ -4,8 +4,12 @@ let lower;
 let sum = 0;
 
 // if number is negative
-
-// if either value is not an int
+if (moreArgs[0] < 0 || moreArgs[1] < 0){
+    return 'ERROR'
+} // if either value is not an int
+    else if (typeof(moreArgs[0]) !== typeof(0) || typeof(moreArgs[1]) !== typeof(0)){
+    return 'ERROR'
+} else {
 
 // loop determining the lower value
 for (let i = 0; i < moreArgs.length; i++){
@@ -19,13 +23,13 @@ for (let i = 0; i < moreArgs.length; i++){
     }
 }
 
-
 // loop to sum values
 for (let i = lower; i <= higher; i++){
     sum += i;
 }
 
 return sum;
+}
 };
 
 // Do not edit below this line
