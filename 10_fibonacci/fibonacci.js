@@ -1,10 +1,12 @@
 const fibonacci = function(num) {
-    const loopCount = num;
+    const loopCount = parseInt(num);
     let fib = [];
 
     if (num === 1 || num === 2){
         return 1
-    } else {
+    } else if (num < 0){
+        return 'OOPS'
+    }  else {
         fib.push(1);
         fib.push(1);
 
