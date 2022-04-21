@@ -3,7 +3,7 @@ const palindromes = function (s) {
 let str = s.replace(/^\s+|\s+|\s+$/gm,'');
 
 //remove punctuation
-str = str.replace(/[^\w\s]/, '');
+str = str.replace(/[^\w\s]/g, '');
 
 //set string to lowercase
 str = str.toLowerCase();
