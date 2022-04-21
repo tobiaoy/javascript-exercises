@@ -3,7 +3,7 @@ const palindromes = function (s) {
 let str = s.replace(/^\s+|\s+|\s+$/gm,'');
 
 //remove punctuation
-str = str.replace("[^\w\s]", '');
+str = str.replace(/[^\w\s]/, '');
 
 //set string to lowercase
 str = str.toLowerCase();
@@ -24,7 +24,7 @@ let rev_str = reverse_str.join("");
 
 
 //condition to check if the string and reverse string are the same
-if(str = rev_str){
+if(str === rev_str){
     return true;
 } else {
     return false;
